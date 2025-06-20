@@ -1,0 +1,5 @@
+/Users/surya/TBC/Disbursement/tests/Integration/obj/Debug/net8.0/Disbursement.IntegrationTests.csproj.AssemblyReference.cache
+/Users/surya/TBC/Disbursement/tests/Integration/obj/Debug/net8.0/Disbursement.IntegrationTests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/surya/TBC/Disbursement/tests/Integration/obj/Debug/net8.0/Disbursement.IntegrationTests.AssemblyInfoInputs.cache
+/Users/surya/TBC/Disbursement/tests/Integration/obj/Debug/net8.0/Disbursement.IntegrationTests.AssemblyInfo.cs
+/Users/surya/TBC/Disbursement/tests/Integration/obj/Debug/net8.0/Disbursement.IntegrationTests.csproj.CoreCompileInputs.cache
