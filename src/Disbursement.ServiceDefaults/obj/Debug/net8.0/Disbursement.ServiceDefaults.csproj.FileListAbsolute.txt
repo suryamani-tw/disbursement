@@ -1,0 +1,12 @@
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/bin/Debug/net8.0/Disbursement.ServiceDefaults.deps.json
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/bin/Debug/net8.0/Disbursement.ServiceDefaults.dll
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/bin/Debug/net8.0/Disbursement.ServiceDefaults.pdb
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/Disbursement.ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/Disbursement.ServiceDefaults.AssemblyInfoInputs.cache
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/Disbursement.ServiceDefaults.AssemblyInfo.cs
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/Disbursement.ServiceDefaults.csproj.CoreCompileInputs.cache
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/Disbursement.ServiceDefaults.sourcelink.json
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/Disbursement.ServiceDefaults.dll
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/refint/Disbursement.ServiceDefaults.dll
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/Disbursement.ServiceDefaults.pdb
+/Users/surya/TBC/Disbursement/src/Disbursement.ServiceDefaults/obj/Debug/net8.0/ref/Disbursement.ServiceDefaults.dll

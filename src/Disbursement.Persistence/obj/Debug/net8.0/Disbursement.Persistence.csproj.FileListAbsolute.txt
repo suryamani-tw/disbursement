@@ -1,0 +1,12 @@
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/bin/Debug/net8.0/Disbursement.Persistence.deps.json
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/bin/Debug/net8.0/Disbursement.Persistence.dll
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/bin/Debug/net8.0/Disbursement.Persistence.pdb
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/Disbursement.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/Disbursement.Persistence.AssemblyInfoInputs.cache
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/Disbursement.Persistence.AssemblyInfo.cs
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/Disbursement.Persistence.csproj.CoreCompileInputs.cache
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/Disbursement.Persistence.sourcelink.json
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/Disbursement.Persistence.dll
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/refint/Disbursement.Persistence.dll
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/Disbursement.Persistence.pdb
+/Users/surya/TBC/Disbursement/src/Disbursement.Persistence/obj/Debug/net8.0/ref/Disbursement.Persistence.dll
