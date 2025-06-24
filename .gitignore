@@ -2,6 +2,10 @@
 bin/
 obj/
 
+# Ignore all obj and bin files recursively
+**/bin/
+**/obj/
+
 # User-specific files
 *.user
 *.suo
@@ -26,3 +30,10 @@ pacts/
 # Docker
 **/Dockerfile*
 **/docker-compose*
+
+# NuGet cache
+.nuget/
+
+# dotnet build cache
+artifacts/
+.cache/

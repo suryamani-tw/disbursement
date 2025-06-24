@@ -45,4 +45,4 @@ jobs:
           sleep 10
 
       - name: Run contract tests
-        run: dotnet test tests/ContractTests/Disbursement.ContractTests.csproj --no-build --verbosity normal
+        run: dotnet test tests/Contract/Disbursement.ContractTests.csproj --no-build --verbosity normal
