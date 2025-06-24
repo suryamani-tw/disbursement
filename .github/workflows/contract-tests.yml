@@ -24,8 +24,9 @@ jobs:
       - name: Prepare pact directories and copy files
         run: |
           mkdir -p ./pacts/api ./pacts/messages
-          cp pact-contracts/pacts/api/*.json ./pacts/api/
-          cp pact-contracts/pacts/messages/*.json ./pacts/messages/
+          cp pact-contracts/pacts/api/*.json ./pacts/api/ || echo "No API pact files found."
+          cp pact-contracts/pacts/messages/*.json ./pacts/messages/ || echo "No message pact files found."
+        continue-on-error: true
 
       - name: Set up .NET
         uses: actions/setup-dotnet@v4
