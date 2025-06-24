@@ -27,7 +27,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disbursement.IntegrationTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disbursement.TestHelpers", "tests\Helpers\Disbursement.TestHelpers.csproj", "{F7C5EF9D-6CB1-4863-89C2-92B8D0AC082F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disbursement.ContractTests", "tests\ContractTests\Disbursement.ContractTests.csproj", "{4C4A5D40-1DAE-4707-BD44-7FC6A3B11CD6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Disbursement.ContractTests", "tests\Contract\Disbursement.ContractTests.csproj", "{4C4A5D40-1DAE-4707-BD44-7FC6A3B11CD6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

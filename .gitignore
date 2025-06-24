@@ -1,0 +1,28 @@
+# Ignore build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Test results
+TestResults/
+
+# Pact files (if not needed locally)
+pacts/
+
+# Logs
+*.log
+
+# Docker
+**/Dockerfile*
+**/docker-compose*
