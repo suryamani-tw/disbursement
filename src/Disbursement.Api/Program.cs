@@ -8,6 +8,9 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.PropertyNamingPolicy = null;
     });
 
+// Register the message publisher
+builder.Services.AddScoped<Disbursement.Api.Messaging.IDisbursementMessagePublisher, Disbursement.Api.Messaging.ConsoleDisbursementMessagePublisher>();
+
 // Optional: Add Swagger if you want API docs and testing UI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

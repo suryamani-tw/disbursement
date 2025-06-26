@@ -4,14 +4,14 @@ using Disbursement.TestHelpers;
 
 namespace Disbursement.ContractTests
 {
-    public class DisbursementProviderPactVerificationTests
+    public class DisbursementApiProviderPactTests
     {
 
-        private static readonly string DisbursementApiUrl = Environment.GetEnvironmentVariable("API_URL") ;
+        private static readonly string DisbursementApiUrl = Environment.GetEnvironmentVariable("API_URL") ?? "http://localhost:5062";
         private static readonly string Type = "api";
         private readonly ITestOutputHelper _output;
 
-        public DisbursementProviderPactVerificationTests(ITestOutputHelper output)
+        public DisbursementApiProviderPactTests(ITestOutputHelper output)
         {
             _output = output;
         }
@@ -27,10 +27,10 @@ namespace Disbursement.ContractTests
                 LogLevel = PactNet.PactLogLevel.Debug,
             };
 
-            new PactVerifier(config)
-                 .ServiceProvider("disbursement", new Uri(DisbursementApiUrl))
-                 .WithFileSource(new FileInfo(pactFile))
-                 .Verify();
+            new PactVerifier("disbursement")
+                .WithHttpEndpoint(new Uri(DisbursementApiUrl))
+                .WithFileSource(new FileInfo(pactFile))
+                .Verify();
         }
     }
 }
