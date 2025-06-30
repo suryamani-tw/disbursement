@@ -17,14 +17,11 @@ This is a sample project for contract testing using PactNet and xUnit with a .NE
    ```sh
    dotnet build
    ```
-3. **Start the API:**
+3. **Run contract tests:**
    ```sh
-   dotnet run --project src/Disbursement.Api/Disbursement.Api.csproj --urls=http://localhost:5062
+   dotnet test tests/ContractTests/Disbursement.ContractTests.csproj
    ```
-4. **Run contract tests:**
-   ```sh
-   API_URL=http://localhost:5062 dotnet test tests/ContractTests/Disbursement.ContractTests.csproj
-   ```
+   > **Note:** The contract tests now automatically start and stop the API server as part of the test process. You do NOT need to start the API manually or set the `API_URL` environment variable.
 
 ## CI/CD
 

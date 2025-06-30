@@ -9,8 +9,6 @@ on:
 jobs:
   contract-tests:
     runs-on: ubuntu-latest
-    env:
-      API_URL: http://localhost:5062
     steps:
       - name: Checkout your repository
         uses: actions/checkout@v4
@@ -38,11 +36,6 @@ jobs:
 
       - name: Build
         run: dotnet build --no-restore
-
-      - name: Start Disbursement API
-        run: |
-          dotnet run --project src/Disbursement.Api/Disbursement.Api.csproj --urls=${{ env.API_URL }} &
-          sleep 10
 
       - name: Run contract tests
         run: dotnet test tests/Contract/Disbursement.ContractTests.csproj --no-build --verbosity normal

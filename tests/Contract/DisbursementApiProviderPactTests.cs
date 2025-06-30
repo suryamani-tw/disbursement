@@ -1,25 +1,55 @@
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
 using PactNet.Verifier;
+using Xunit;
 using Xunit.Abstractions;
 using Disbursement.TestHelpers;
 
 namespace Disbursement.ContractTests
 {
-    public class DisbursementApiProviderPactTests
+    // Fixture to start and stop the API on a real TCP port
+    public class DisbursementApiFixture : IDisposable
     {
+        public readonly IHost Server;
+        public readonly Uri ServerUri;
 
-        private static readonly string DisbursementApiUrl = Environment.GetEnvironmentVariable("API_URL") ?? "http://localhost:5062";
+        public DisbursementApiFixture()
+        {
+            // Use a fixed port for simplicity; you can randomize if needed
+            var port = 5062;
+            ServerUri = new Uri($"http://localhost:{port}");
+            Server = Host.CreateDefaultBuilder()
+                .ConfigureWebHostDefaults(webBuilder =>
+                {
+                    webBuilder.UseUrls(ServerUri.ToString());
+                    webBuilder.UseStartup<Disbursement.Api.Startup>();
+                })
+                .Build();
+            Server.Start();
+        }
+
+        public void Dispose()
+        {
+            Server.Dispose();
+        }
+    }
+
+    public class DisbursementApiProviderPactTests : IClassFixture<DisbursementApiFixture>
+    {
         private static readonly string Type = "api";
         private readonly ITestOutputHelper _output;
+        private readonly DisbursementApiFixture _fixture;
 
-        public DisbursementApiProviderPactTests(ITestOutputHelper output)
+        public DisbursementApiProviderPactTests(DisbursementApiFixture fixture, ITestOutputHelper output)
         {
+            _fixture = fixture;
             _output = output;
         }
 
         [Fact]
         public void HonorsPactWithInstallmentConsumer()
         {
-            var pactFile = Path.Combine("..", "..", "..", "..", "..", "pacts",Type, "installment-disbursement.json");
+            var pactFile = Path.Combine("..", "..", "..", "..", "..", "pacts", Type, "installment-disbursement.json");
 
             var config = new PactVerifierConfig
             {
@@ -28,7 +58,7 @@ namespace Disbursement.ContractTests
             };
 
             new PactVerifier("disbursement")
-                .WithHttpEndpoint(new Uri(DisbursementApiUrl))
+                .WithHttpEndpoint(_fixture.ServerUri)
                 .WithFileSource(new FileInfo(pactFile))
                 .Verify();
         }
